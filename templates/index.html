@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Boston House Price Predictor</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 60%;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            margin-top: 50px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0 16px 0;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 20px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Boston House Price Prediction</h2>
+    <form method="POST" action="/predict">
+        <label>CRIM</label><input type="text" name="CRIM" required>
+        <label>ZN</label><input type="text" name="ZN" required>
+        <label>INDUS</label><input type="text" name="INDUS" required>
+        <label>CHAS</label><input type="text" name="CHAS" required>
+        <label>NOX</label><input type="text" name="NOX" required>
+        <label>RM</label><input type="text" name="RM" required>
+        <label>AGE</label><input type="text" name="AGE" required>
+        <label>DIS</label><input type="text" name="DIS" required>
+        <label>RAD</label><input type="text" name="RAD" required>
+        <label>TAX</label><input type="text" name="TAX" required>
+        <label>PTRATIO</label><input type="text" name="PTRATIO" required>
+        <label>B</label><input type="text" name="B" required>
+        <label>LSTAT</label><input type="text" name="LSTAT" required>
+        <button type="submit">Predict</button>
+    </form>
+    {% if prediction_text %}
+        <p class="result">{{ prediction_text }}</p>
+    {% endif %}
+</div>
+</body>
+</html>

@@ -1,21 +1,18 @@
 
-# 🏠 Boston House Price Prediction using Linear Regression
+# Boston House Price Prediction using Linear Regression
 
 This project predicts house prices in Boston using a Linear Regression model. A simple Flask web app is built to take user inputs and display the predicted house price.
 
-## 📂 Project Structure
-
+# Project Structure
 
 BostonHousePricePrediction/
-│
-├── model_training.ipynb        # Jupyter notebook for training the model
-├── model.pkl                   # Trained model saved using pickle
-├── app.py                      # Flask application
-├── templates/
-│   └── index.html              # HTML page with custom CSS
+model_training.ipynb        # Jupyter notebook for training the model
+model.pkl                   # Trained model saved using pickle
+app.py                      # Flask application
+templates/index.html        # HTML page with custom CSS
 
 
-## 🚀 How It Works
+## How It Works
 
 1. **Model Training**
    - Dataset: `Boston Housing Dataset` from `sklearn.datasets`
@@ -28,13 +25,8 @@ BostonHousePricePrediction/
    - Predicts house price using the trained model
    - Displays the result on the same page
 
-## 🌐 Live Demo
 
-If deployed:  
-🔗 [Your Deployed App Link]  
-*(Optional: You can use Render, PythonAnywhere, or any other free hosting service.)*
-
-## 💻 How to Run Locally
+## How to Run Locally
 
 1. **Clone the repository**
    bash
@@ -55,7 +47,7 @@ If deployed:
 4. **Visit the app**
    Open your browser and go to: `http://127.0.0.1:5000/`
 
-## 🔧 Tech Stack
+## Tech Stack
 
 - Python
 - Jupyter Notebook
@@ -63,15 +55,15 @@ If deployed:
 - Flask
 - HTML + CSS
 
-## 📝 Features
+## Features
 
-- ✅ Trained regression model using real-world housing data
-- ✅ Simple and intuitive UI with CSS styling
-- ✅ Predicts housing price in real-time
-- ✅ Localhost simulation + screenshot included
+- Trained regression model using real-world housing data
+- Simple and intuitive UI with CSS styling
+- Predicts housing price in real-time
+- Localhost simulation + screenshot included
 
 
-## 📁 Files to Submit
+## Files to Submit
 
 - model_training.ipynb
 - app.py
@@ -80,11 +72,7 @@ If deployed:
 - README.md
 - localhost_screenshot.png
 
-## 🙋‍♂️ Author
-
-**Manoj Babu Kokkirigadda**  
-[GitHub](https://github.com/Manoj-Babu-Kokkirigadda)
-��♂️ Author
+## Author
 
 **Manoj Babu Kokkirigadda**  
 [GitHub](https://github.com/Manoj-Babu-Kokkirigadda)
